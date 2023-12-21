@@ -1,0 +1,21 @@
+﻿
+@if (TempData["message"] != null)
+{
+    <div style="margin-top:50px">
+
+        <div class="alert alert-@TempData["type"]">
+
+            <strong>@TempData["message"]</strong>
+
+        </div>
+
+        <div class="text-center Underline">
+            <a href="my.serolkalam.scheme://serolkalam/status/@TempData["status"]"> بازگشت به برنامه </a>
+        </div>
+
+    </div>
+
+
+}
+
+

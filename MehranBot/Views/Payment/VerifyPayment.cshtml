@@ -1,0 +1,26 @@
+﻿
+@if (TempData["message"] != null)
+{
+<div style="margin-top:50px">
+
+    <div class="alert alert-@TempData["type"]">
+
+        <strong>@TempData["message"]</strong>
+
+        @if (TempData["refId"] != null)
+        {
+            <p> کد پیگیری شما  :  <strong>@TempData["refId"]</strong></p>
+        }
+
+    </div>
+
+    <div class="text-center Underline" id="backtoapp">
+            <a href="@TempData["telbotus"]"> بازگشت به ربات </a>
+    </div>
+
+</div>
+
+    
+}
+
+
